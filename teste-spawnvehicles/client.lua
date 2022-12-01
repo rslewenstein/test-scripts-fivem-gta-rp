@@ -1,4 +1,4 @@
--- Spawning one veicle
+-- Spawning one vehicle
 -- EX: /spawnvehicle Baller or /spawnveicle jet
 RegisterCommand("spawnvehicle", function(source, args, rawcommand)
     local ped = GetPlayerPed(-1)
@@ -16,7 +16,7 @@ RegisterCommand("spawnvehicle", function(source, args, rawcommand)
     end
 end)
 
--- Spawning ten veicles
+-- Spawning ten vehicles
 -- EX: /spawnmultiplevehicle jet
 RegisterCommand("spawnmultiplesvehicles", function(source, args, rawcommand)
     local ped = GetPlayerPed(-1)
