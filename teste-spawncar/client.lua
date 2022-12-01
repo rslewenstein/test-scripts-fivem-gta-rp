@@ -1,8 +1,6 @@
--- https://wiki.gtanet.work/index.php?title=Vehicle_Models
-
 -- Spawning one veicle
--- EX: /spawnveicle Baller or /spawnveicle jet
-RegisterCommand("spawnveicle", function(source, args, rawcommand)
+-- EX: /spawnvehicle Baller or /spawnveicle jet
+RegisterCommand("spawnvehicle", function(source, args, rawcommand)
     local ped = GetPlayerPed(-1)
     local pcoords = GetEntityCoords(ped)
 
@@ -14,12 +12,13 @@ RegisterCommand("spawnveicle", function(source, args, rawcommand)
             Wait(1)
         end
         local spawn = CreateVehicle(rmodel, pcoords, 200, true, false)
+        SetVehicleDoGroundProperly(spawn)
     end
 end)
 
 -- Spawning ten veicles
--- EX: /spawnmultipleveicle jet
-RegisterCommand("spawnmultipleveicle", function(source, args, rawcommand)
+-- EX: /spawnmultiplevehicle jet
+RegisterCommand("spawnmultiplesvehicles", function(source, args, rawcommand)
     local ped = GetPlayerPed(-1)
     local pcoords = GetEntityCoords(ped)
     local auxcoords = pcoords * 1.02
@@ -39,6 +38,5 @@ RegisterCommand("spawnmultipleveicle", function(source, args, rawcommand)
     end
 end)
 
--- /spawnveicle jet
-
--- /spawnmultipleveicle jet
+-- /spawnvehicle jet
+-- /spawnmultiplevehicle jet
