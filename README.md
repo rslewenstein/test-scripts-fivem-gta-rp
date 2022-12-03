@@ -8,3 +8,5 @@
 - https://docs.fivem.net/docs/
 - https://wiki.gtanet.work/index.php?title=Vehicle_Models
 - https://wiki.rage.mp/index.php?title=Weapons
+- https://steamcommunity.com/dev/apikey
+- https://keymaster.fivem.net/login
