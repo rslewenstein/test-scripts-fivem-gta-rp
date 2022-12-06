@@ -21,7 +21,7 @@ end)
 RegisterCommand("spawnmultiplesvehicles", function(source, args, rawcommand)
     local ped = GetPlayerPed(-1)
     local pcoords = GetEntityCoords(ped)
-    local auxcoords = pcoords * 1.08
+    local auxcoords = pcoords * 1.02
     -- local auxcoords = pcoords.y + 0.01
     -- local auxcoords = pcoords.x + 0.01
     -- local auxcoords = pcoords.z + 0.01
